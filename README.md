@@ -41,4 +41,4 @@ Your markup should look like the following:
 </nav-panels>
 ```
 #### Methods
-You can expose the `goTo(state)` and `goBack()` methods by assinging a `delegateHandle` to your `nav-panels` element navigate between panels
+You can expose the `goTo(state)` and `goBack()` methods by assinging a `delegateHandle` to your `nav-panels` element to navigate between panels
