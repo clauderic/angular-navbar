@@ -136,7 +136,7 @@ app.controller('IndexCtrl', function($scope) {
 		}
 	};
 })
-.directive('navAction', function() {
+.directive('navButtons', function() {
 	return {
 		require: '^panel',
 		restrict: 'E',
