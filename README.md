@@ -18,7 +18,9 @@ Your markup should look like the following:
 <nav-panels delegateHandle="mainNav">
 	<panel state="overview">
 		<nav-bar>
+			<nav-buttons side="left">Left actions</nav-buttons>
 			<nav-title><strong ng-click="doSomething()">Main</strong></nav-title>
+			<nav-buttons side="right">Right actions</nav-buttons>
 		</nav-bar>
 		<panel-content>
 			<p>Some content for the main panel.</p>
@@ -39,4 +41,4 @@ Your markup should look like the following:
 </nav-panels>
 ```
 #### Methods
-You can use the `goTo(state)` and `goBack()` methods to navigate between panels
+You can expose the `goTo(state)` and `goBack()` methods by assinging a `delegateHandle` to your `nav-panels` element navigate between panels
