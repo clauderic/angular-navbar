@@ -11,7 +11,7 @@ This is a work in progress. Partial fork of ion-nav-view, removed dependency on 
 
 **(2)** Include `angular-nav-panels.js` (or `angular-nav-panels.min.js`) in your `index.html`, after including Angular itself (For Component users: ignore this step)
 
-**(3)** Add `'ngNavPanels'` to your main module's list of dependencies (For Component users: replace `'ui.router'` with `require('ng-nav-panels')`)
+**(3)** Add `'ngNavPanels'` to your main module's list of dependencies (For Component users: replace `'ngNavPanels'` with `require('ng-nav-panels')`)
 
 Your markup should look like the following:
 ```html
