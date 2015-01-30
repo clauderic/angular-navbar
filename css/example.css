@@ -3,18 +3,35 @@
 	height: 100%;
 }
 
+.icon-back-arrow {
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/back-arrow.svg');
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 .nav-panels .panel-wrapper {
 	position: relative;
 	height: 100%;
+	overflow: hidden;
+	background-color: #A5A5A5;
 }
 
+.nav-panels .panel:first-child {
+	transform: translate3d(0%, 0, 0);
+}
 .nav-panels .panel {
 	position: absolute;
-	top: 0;
+	top: 44px;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background: #FFF;
+	transform: translate3d(105%, 0, 0);
+	transition: all 0.5s ease;
+	box-shadow: -1px 0px 3px rgba(0,0,0,0.2);
 }
 
 .panel nav-bar {

@@ -1,45 +1,47 @@
 <!doctype html>
 <html lang="en" ng-app="app">
 <head>
-    <meta charset="utf8">
-    <title>Navigation Bar</title>
-    <link rel="stylesheet" href="css/example.css">
+	<meta charset="utf8">
+	<title>Navigation Bar</title>
+	<link rel="stylesheet" href="css/example.css">
+	<link rel="stylesheet" href="css/ionic.css">
 </head>
 <body>
-    <div ng-controller="IndexCtrl">
-        <div class="demo">
-        <nav-panels>
-            <panel state="overview">
-                <nav-bar>
-                    <nav-back-button>&lt;</nav-back-button>
-                    <nav-title><strong ng-click="derp()">Main</strong></nav-title>
-                    <nav-buttons>Edit</nav-buttons>
-                </nav-bar>
-                <panel-content>
-                    Some content for the main panel
-                </panel-content>
-            </panel>
-            <panel state="edit">
-                <nav-bar>
-                    <nav-title>Edit</nav-title>
-                </nav-bar>
-                <panel-content>
-                    Secondary panel
-                </panel-content>
-            </panel>
-            <panel state="herp">
-                <nav-bar>
-                    <nav-title>Herp</nav-title>
-                </nav-bar>
-                <panel-content>
+	<div ng-controller="IndexCtrl">
+		<div class="demo">
+		<nav-panels>
+			<panel state="overview">
+				<nav-bar>
+					<nav-title><strong ng-click="derp()">Main</strong></nav-title>
+				</nav-bar>
+				<panel-content>
+					Some content for the main panel
+				</panel-content>
+			</panel>
+			<panel state="edit">
+				<nav-bar>
+					<nav-back-button></nav-back-button>
+					<nav-title>Edit</nav-title>
+					<nav-buttons><button class="button button-clear">Done</button></nav-buttons>
+				</nav-bar>
+				<panel-content>
+					Secondary panel
+				</panel-content>
+			</panel>
+			<panel state="herp">
+				<nav-bar>
+					<nav-back-button></nav-back-button>
+					<nav-title>Herp</nav-title>
+				</nav-bar>
+				<panel-content>
 
-                </panel-content>
-            </panel>
-        </nav-panels>
-        </div>
-    </div>
-    <script src="angular.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-sanitize.js"></script>
-    <script src="index.js"></script>
+				</panel-content>
+			</panel>
+		</nav-panels>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular-sanitize.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>
